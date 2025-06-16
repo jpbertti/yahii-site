@@ -1,0 +1,49 @@
+  .navbar-custom {
+      background: linear-gradient(90deg, #0b1e49, #1c4ba8);
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+
+  .navbar-brand img {
+      margin-right: 10px;
+  }
+
+  .navbar-nav .nav-link {
+      color: #fff !important;
+      font-weight: bold;
+      margin: 0 0.8rem;
+      position: relative;
+      transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-nav .nav-link:hover {
+      transform: translateY(-4px);
+      text-decoration: underline;
+  }
+
+  .dropdown-menu {
+      width: 100vw;
+      left: 0 !important;
+      right: 0 !important;
+      border-radius: 0;
+      background-color: #173d7a;
+  }
+
+  .dropdown-menu .dropdown-item {
+      color: white;
+      font-weight: 500;
+      padding: 1rem 2rem;
+      transition: background-color 0.2s ease;
+  }
+
+  .dropdown-menu .dropdown-item:hover {
+      background-color: #112c5c;
+  }
+
+@media (max-width: 991.98px) { /* mobile e tablets onde o collapse aparece */
+  .navbar-collapse .dropdown-menu {
+    width: auto !important; /* deixa largura automática */
+
+  }
+}
+

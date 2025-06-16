@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Yahii - Seu Portal de Notícias Econômicas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/aside.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid d-flex align-items-center">
+            <a class="navbar-brand text-white ms-4 imagem-aproximar" href="./index.html">
+                <img src="./img/yahii-sem-fundo.png" alt="logo yahii" width="130px" />
+            </a>
+            <button class="navbar-toggler border-0 ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light rounded"></span>
+            </button>
+
+            <!-- Menus centralizados -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Últimas Notícias</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Portal dos Índices
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://www.yahii.com.br/Indices.html"
+                                    target="_blank">Acesse o Portal
+                                    dos Índices</a></li>
+                            <li><a class="dropdown-item" href="#">Dólar</a></li>
+                            <li><a class="dropdown-item" href="#">Euro</a></li>
+                            <li><a class="dropdown-item" href="#">Selic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <main class="container-fluid flex-grow-1 py-4 px-4">
+        <div class="row">
+            <!-- Conteúdo principal -->
+            <div class="col-lg-10">
+                <section class="my-0">
+                    <div class="container py-2 px-0">
+                        <div class="row g-3">
+                            <!-- Inicio Card Principal -->
+                            <div class="col-md-6 ml-0">
+                                <a href="https://www.yahii.com.br" target="_blank">
+                                    <div class="card text-white imagem-aproximar">
+                                        <img src="./img/noticia1.jpeg" class="card-img" alt="Imagem Principal">
+                                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                            <h2 class="title-large">Troca de mísseis marca novo capítulo do conflito
+                                                entre
+                                                Irã e Israel</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div>
+                                    <p class="text-muted mt-3 justificado">
+                                        A reação do Congresso ao Decreto assinado por Lula no fim de maio, para
+                                        aumentar o IOF para arrecadar 18 bilhões de reais ainda neste ano —
+                                        gesto de um governo que costuma atacar com volúpia o bolso dos
+                                        contribuintes e reluta em fechar a torneira dos gastos públicos.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Fim Card Principal -->
+
+                            <!-- Início Card Secundário -->
+                            <div class="col-md-3">
+                                <div class="card sem-borda">
+                                    <!-- Imagem com modal (opcional: veja nota no fim) -->
+                                    <img src="./img/veja.jpeg" class="card-img-top imagem-aproximar"
+                                        alt="Imagem Secundária" style="cursor: pointer;" data-bs-toggle="modal"
+                                        data-bs-target="#modal-veja">
+
+                                    <!-- Conteúdo do card clicável -->
+                                    <a href="https://www.yahii.com.br/426-crisedoiof.html" target="_blank"
+                                        class="sem-underline text-decoration-none text-dark">
+                                        <div class="card-body px-0 py-2">
+                                            <p class="text-muted mb-0"><small>VEJA</small></p>
+                                            <h5 class="fw-bold imagem-aproximar mt-1">
+                                                Debate urgente sobre ajuste fiscal
+                                            </h5>
+                                            <p class="card-text text-muted mt-2 justificado">
+                                                A reação do Congresso ao Decreto assinado por Lula no fim de maio, para
+                                                aumentar o IOF para arrecadar 18 bilhões de reais ainda neste ano —
+                                                gesto de um governo que costuma atacar com volúpia o bolso dos
+                                                contribuintes e reluta em fechar a torneira dos gastos públicos.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Modal para imagem -->
+                            <div class="modal fade" id="modal-veja" tabindex="-1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content bg-transparent border-0">
+                                        <div class="modal-body p-0">
+                                            <img src="./img/veja.jpeg" alt="Imagem ampliada"
+                                                class="img-fluid w-100 rounded">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim Card Secundário -->
+
+                            <div class="col-md-3">
+                                <div class="card border-0">
+                                    <div class="p-3">
+                                        <!-- Card 1 -->
+                                        <div class="news-card d-flex mb-4 border-bottom pb-3">
+                                            <img src="https://img.freepik.com/icones-gratis/trofeu_318-47456.jpg"
+                                                class="me-3 rounded" alt="Imagem 1" width="80" height="80">
+                                            <div>
+                                                <div class="category text-muted small fw-semibold">Finanças</div>
+                                                <div class="title fw-bold">Mundial de Clubes: Fifa oferece até R$ 5 bi
+                                                    em prêmios para os times; veja valores</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Card 2 -->
+                                        <div class="news-card d-flex mb-4 border-bottom pb-3">
+                                            <img src="https://img.freepik.com/icones-gratis/pessoa-negocios_318-203378.jpg"
+                                                class="me-3 rounded" alt="Imagem 2" width="80" height="80">
+                                            <div>
+                                                <div class="category text-muted small fw-semibold">Finanças</div>
+                                                <div class="title fw-bold">Ele fez Uber, mas virou o jogo, tornou-se
+                                                    sócio de escritório e assessor premiado</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- card 3 -->
+                                        <div class="news-card d-flex mb-4 border-bottom pb-3">
+                                            <img src="https://img.freepik.com/icones-gratis/trofeu_318-47456.jpg"
+                                                class="me-3 rounded" alt="Imagem 1" width="80" height="80">
+                                            <div>
+                                                <div class="category text-muted small fw-semibold">Finanças</div>
+                                                <div class="title fw-bold">Mundial de Clubes: Fifa oferece até R$ 5 bi
+                                                    em prêmios para os times; veja valores</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- card 4 -->
+                                        <div class="news-card d-flex mb-4 border-bottom pb-3">
+                                            <img src="https://img.freepik.com/icones-gratis/trofeu_318-47456.jpg"
+                                                class="me-3 rounded" alt="Imagem 1" width="80" height="80">
+                                            <div>
+                                                <div class="category text-muted small fw-semibold">Finanças</div>
+                                                <div class="title fw-bold">Mundial de Clubes: Fifa oferece até R$ 5 bi
+                                                    em prêmios para os times; veja valores</div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                </section>
+
+                <!-- grafico ibovespa -->
+                <section class="my-4 my-md-5 w-100">
+                    <div class="container px-3 px-md-0 my-4">
+                        <div class="row g-4">
+                            <!-- Gráfico Ibovespa -->
+                            <div class="col-md-9">
+                                <div class="card border rounded bg-white h-100">
+                                    <div class="card-body p-4">
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <h2 class="h5 fw-semibold mb-0">Ibovespa</h2>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <span id="ibov-valor" class="fs-4 fw-semibold text-dark">--</span>
+                                                <span id="ibov-variacao"
+                                                    class="badge bg-secondary d-flex align-items-center">--</span>
+                                            </div>
+                                        </div>
+                                        <img src="./img/ibovespa_hoje.png" alt="Gráfico do Ibovespa"
+                                            class="img-fluid rounded border">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Altas / Baixas -->
+                            <div class="col-md-3">
+                                <div class="card mb-3">
+                                    <div class="card-header bg-success text-white py-2 px-3">
+                                        📈 Maiores Altas
+                                    </div>
+                                    <ul id="altas" class="list-group list-group-flush small">
+                                        <li class="list-group-item">Carregando...</li>
+                                    </ul>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-header bg-danger text-white py-2 px-3">
+                                        📉 Maiores Baixas
+                                    </div>
+                                    <ul id="baixas" class="list-group list-group-flush small">
+                                        <li class="list-group-item">Carregando...</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- fim grafico ibovespa -->
+
+                <!-- inicio moedas // criptos -->
+                <section class="my-4 my-md-5 w-100">
+                    <div class="container px-3 px-md-0 my-4">
+                        <div class="row g-4 mt-4 ">
+                            <!-- Moedas -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <table class="table table-bordered text-center m-0">
+                                            <thead class="table-light moedas-indices-economicos">
+                                                <tr>
+                                                    <th>Moeda</th>
+                                                    <th>Compra</th>
+                                                    <th>Venda</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="https://www.yahii.com.br/dolardiario25.html"
+                                                            target="_blank" class="hover-link"
+                                                            title="Confira as cotações do DOLAR do ano de 2025"><strong>Dólar
+                                                                Comercial
+                                                                ($)</strong></a>
+                                                    </td>
+                                                    <td id="usd-bid">R$ ...</td>
+                                                    <td id="usd-ask">R$ ...</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://www.yahii.com.br/eurodiario25.html"
+                                                            target="_blank" class="hover-link"
+                                                            title="Confira as cotações do EURO do ano de 2025"><strong>Euro
+                                                                (€)</strong></a></td>
+                                                    <td id="eur-bid">R$ ...</td>
+                                                    <td id="eur-ask">R$ ...</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <a href="https://www.yahii.com.br/dolardiario.html"
+                                                            target="_blank" class="hover-link">
+                                                            Confira o histórico de cotação do DOLAR($) de 1983 a
+                                                            2025
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <a href="https://www.yahii.com.br/eurodiario.html"
+                                                            target="_blank" class="hover-link">
+                                                            Confira o histórico de cotação do EURO(€) de 1999 a 2025
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Criptoativos -->
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-body p-0">
+                                        <table class="table table-bordered text-center m-0">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Criptomoedas</th>
+                                                    <th>Compra</th>
+                                                    <th>Venda</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Bitcoin (BTC)</td>
+                                                    <td id="btc-bid">R$ ...</td>
+                                                    <td id="btc-ask">R$ ...</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ethereum (ETH)</td>
+                                                    <td id="eth-bid">R$ ...</td>
+                                                    <td id="eth-ask">R$ ...</td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3">
+                                                        <a>Os valores das Criptomoedas são atualizadas a cada 15
+                                                            minutos</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- fim moedas // criptos -->
+
+            <!-- Aside lateral -->
+            <aside class="col-lg-2">
+                <h5 class="fw-bold">Consultas</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://servicos.receita.fazenda.gov.br/Servicos/CPF/ConsultaSituacao/ConsultaPublica.asp"
+                            target="_blank">Consulta CPF</a></li>
+                    <li><a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp"
+                            target="_blank">Consulta CNPJ</a></li>
+                    <li><a href="https://solucoes.receita.fazenda.gov.br/Servicos/certidaointernet/PF/Emitir"
+                            target="_blank">Certidão CPF / PGFN</a></li>
+                    <li><a href="https://www.yahii.com.br/FeriadosBancarios2025.html" target="_blank">Feriados Bancários
+                            2025</a></li>
+                    <li><a href="https://www.tjsp.jus.br/CanaisComunicacao/Feriados/ExpedienteForense"
+                            target="_blank">Feriados Forenses</a></li>
+                    <li><a href="https://www.yahii.com.br/Honorarios2025.pdf" target="_blank">Honorários
+                            Advocatícios</a></li>
+                    <li><a href="https://www.ipva.fazenda.sp.gov.br/IPVANET_Consulta/Consulta.aspx"
+                            target="_blank">Multas
+                            DETRAN</a></li>
+                    <li><a href="https://www.ipva.fazenda.sp.gov.br/IPVANET_Consulta/Consulta.aspx" target="_blank">IPVA
+                            2025</a></li>
+                    <li><a href="www.serasa.com.br" target="_blank">SERASA</a></li>
+                </ul>
+
+                <h5 class="fw-bold">Índices mais procurados</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.yahii.com.br/CDI.html" target="_blank">CDI</a></li>
+                    <li><a href="https://www.yahii.com.br/DolarComercial.html" target="_blank">Dolar Comercial</a></li>
+                    <li><a href="https://www.yahii.com.br/IGPM.html" target="_blank">IGP-M</a></li>
+                    <li><a href="https://www.yahii.com.br/IPCA.html" target="_blank">IPCA</a></li>
+                    <li><a href="https://www.yahii.com.br/inpc.html" target="_blank">INPC</a></li>
+                    <li><a href="https://www.yahii.com.br/SELIC.html" target="_blank">SELIC</a></li>
+                    <li><a href="https://www.yahii.com.br/TR.html" target="_blank">TR (Taxa Referencial)</a></li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Serviços</h5>
+                <ul class="list-unstyled">
+                    <li><a href="https://www2.ssp.sp.gov.br/aacweb/carrega-iframe" target="_blank">Atestado de
+                            Antecedentes</a></li>
+                    <li><a href="https://www.delegaciaeletronica.policiacivil.sp.gov.br/ssp-de-cidadao/home"
+                            target="_blank">BO Eletrônico</a></li>
+                    <li><a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank">Busca de
+                            CEP</a></li>
+                    <li><a href="https://www.yahii.com.br/LGPD.pdf" target="_blank">Lei Geral de Proteção de Dados</a>
+                    </li>
+                </ul>
+
+                <h5 class="fw-bold mt-4">Prefeituras</h5>
+                <ul class="list-unstyled">
+                    <li><em>Em breve</em></li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="text-white text-center py-3">
+        <p class="mb-1">&copy; 2025 Yahii. Todos os direitos reservados.</p>
+        <small><a href="https://www.yahii.com.br/privacidade.html" class="text-white text-decoration-underline">Política
+                de Privacidade</a> |
+            <a href="#" class="text-white text-decoration-underline">Termos de Uso</a></small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+    <script src="./js/cotacoes.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+/* Links com hover padrão */
+.hover-link {
+    text-decoration: none;
+    color: inherit;
+    transition: text-decoration 0.2s ease;
+}
+
+.hover-link:hover {
+    text-decoration: underline;
+}
+
+/* Classe para remover borda */
+.sem-borda {
+    border: none !important;
+    box-shadow: none;
+    /* opcional: remove sombra padrão */
+}
+
+/* zoom na imagem */
+.imagem-aproximar {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.imagem-aproximar:hover {
+    transform: scale(1.03);
+}
+
+.sem-underline {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.justificado{
+    text-align: justify;
+}

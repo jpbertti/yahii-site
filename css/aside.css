@@ -1,0 +1,40 @@
+/* Menu lateral */
+.menu {
+    font-size: 16px;
+    text-align: left;
+}
+
+/* Links laterais */
+aside a {
+    text-decoration: none;
+    color: #333;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* Títulos de seções no menu */
+aside h5 {
+    font-size: 1.1rem;
+}
+
+/* Ícone SVG nos links */
+aside ul li a::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aa1916' viewBox='0 0 16 16'%3E%3Cpath d='m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Responsivo para aside */
+@media (max-width: 767px) {
+    aside {
+        margin-bottom: 1rem;
+    }
+}
